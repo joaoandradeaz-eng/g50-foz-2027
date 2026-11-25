@@ -1491,6 +1491,41 @@ html:not(.print) body:not(.print) .t01.on .t01-sub .rola .col{animation:t01-vira
 .t08 .t08-pe{position:absolute;left:532px;top:754px;width:972px;margin:0;font-size:23px;line-height:29px;font-weight:500;color:var(--ink);white-space:nowrap}
 .t08 .t08-pe b{font-weight:800;color:var(--navy)}
 
+.slide.t14{background:#054076;--luz-fundo:#054076}
+.t14 .t14-sub{position:absolute;left:96px;top:136px;margin:0;font-size:22px;line-height:28px;font-weight:600;color:#BFE6FB}
+
+.t14 .t14-anel{position:absolute;left:0;top:0;width:1600px;height:900px;overflow:visible}
+.t14 .t14-anel path{stroke:none;transition:opacity .5s ease,transform .7s cubic-bezier(.2,.9,.2,1.1);
+  transition-delay:calc(var(--i) * 35ms);transform-origin:800px 528px}
+.t14 .t14-anel .a{fill:#5CC0F0}
+.t14 .t14-anel .b{fill:#2A9EDB}
+.t14 .t14-anel .p{fill:#FDC400}
+.t14.slide.passos .t14-anel.antes{opacity:1;visibility:visible;transition:none}
+.t14.slide.passos .t14-anel.antes path{opacity:0;transform:scale(.86) rotate(-8deg)}
+
+.t14 .t14-centro{position:absolute;left:640px;top:392px;width:320px;text-align:center;color:#fff}
+.t14 .t14-centro b{display:block;font-size:150px;line-height:150px;font-weight:800;letter-spacing:-.05em;font-feature-settings:"lnum" 1}
+.t14 .t14-centro span{display:block;margin-top:20px;font-size:24px;line-height:28px;font-weight:700;color:#BFE6FB}
+.t14 .t14-leg{position:absolute;left:600px;top:820px;width:400px;margin:0;text-align:center;font-size:18px;line-height:22px;font-weight:700;color:#fff}
+.t14 .t14-leg i{display:inline-block;width:14px;height:14px;margin-right:10px;border-radius:50%;background:#FDC400;vertical-align:-1px}
+
+.t14 .t14-lado{position:absolute;left:0;top:0;width:1600px;height:0}
+.t14 .t14-tema{position:absolute;width:420px}
+.t14 .t14-lado.e .t14-tema{left:80px;text-align:right}
+.t14 .t14-lado.d .t14-tema{left:1100px;text-align:left}
+.t14 .t14-tema h2{display:flex;align-items:baseline;gap:12px;margin:0;height:34px;font-size:21px;line-height:30px;font-weight:800;color:#fff;white-space:nowrap}
+.t14 .t14-lado.e h2{flex-direction:row-reverse}
+.t14 .t14-tema h2 b{font-size:30px;line-height:30px;font-weight:800;color:#5CC0F0;font-feature-settings:"tnum" 1,"lnum" 1}
+.t14 .t14-tema ul{margin:0;padding:0;list-style:none}
+.t14 .t14-tema li{font-size:16px;line-height:21px;font-weight:600;color:#D6EEFB;white-space:nowrap}
+.t14 .t14-tema li.p{color:#FDC400;font-weight:800}
+.t14 .n-discreto{color:#BFE6FB}
+
+
+.t14 .t14-tema{transition:opacity .45s ease,transform .6s cubic-bezier(.2,.9,.2,1.12);transition-delay:calc(var(--j) * 90ms)}
+.t14.slide.passos .t14-lado.antes{opacity:1;visibility:visible;transition:none}
+.t14.slide.passos .t14-lado.antes .t14-tema{opacity:0;transform:translateY(-12px)}
+
 @property --t09a{syntax:'<angle>';initial-value:0deg;inherits:false}
 .slide.t09{background:#054076}
 
@@ -2347,6 +2382,61 @@ html.v-semcursor #fundo{cursor:none}
   <p class="t08-pe" data-passo="3">No livro da Agenda Estratégica: os temas e os projetos de cada um.<br><b>E falta uma parte: a de vocês.</b></p>
   <div class="rodape"><div class="doc"><img src="data:image/png;base64,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" alt="G50+"><span>Foz do Iguaçu, novembro de 2026</span></div><span class="pag">10</span></div>
 </section>
+<section class="slide t14 dark" data-n="14" data-final="aceso">
+  <div class="v-luz"></div>
+  <h1 class="g-titulo">Nosso radar <span class="v">para 2027.</span></h1>
+  <p class="t14-sub">Os temas da Agenda Estratégica e as pautas que acompanhamos em cada um.</p>
+  <svg class="t14-anel" viewBox="0 0 1600 900" aria-hidden="true" data-passo="1">
+    <path class="p" style="--i:0" d="M814.1 276.4A252 252 0 0 1 851.5 281.3L834.4 363.6A168 168 0 0 0 809.4 360.3Z"><title>Reforma tributária: Implementação da reforma</title></path>
+    <path class="a" style="--i:1" d="M857.5 282.7A252 252 0 0 1 893.6 294.0L862.4 372.0A168 168 0 0 0 838.4 364.4Z"><title>Reforma tributária: Código do contribuinte e devedor contumaz</title></path>
+    <path class="a" style="--i:2" d="M899.3 296.4A252 252 0 0 1 932.8 313.8L888.5 385.2A168 168 0 0 0 866.2 373.6Z"><title>Reforma tributária: IBS e CBS nas contribuições associativas</title></path>
+    <path class="a" style="--i:3" d="M938.0 317.1A252 252 0 0 1 968.0 340.1L912.0 402.8A168 168 0 0 0 892.0 387.4Z"><title>Reforma tributária: Tributação de fintechs e apostas</title></path>
+    <path class="a" style="--i:4" d="M972.5 344.3A252 252 0 0 1 998.0 372.2L932.0 424.1A168 168 0 0 0 915.0 405.5Z"><title>Reforma tributária: Monitoramento da reforma</title></path>
+    <path class="p" style="--i:5" d="M1014.2 395.2A252 252 0 0 1 1031.6 428.7L954.4 461.8A168 168 0 0 0 942.8 439.5Z"><title>IA e economia digital: Marco legal da IA</title></path>
+    <path class="b" style="--i:6" d="M1034.0 434.4A252 252 0 0 1 1045.3 470.5L963.6 489.6A168 168 0 0 0 956.0 465.6Z"><title>IA e economia digital: Concorrência em mercados digitais</title></path>
+    <path class="b" style="--i:7" d="M1046.7 476.5A252 252 0 0 1 1051.6 513.9L967.7 518.6A168 168 0 0 0 964.4 493.6Z"><title>IA e economia digital: Fiscalização das agências reguladoras</title></path>
+    <path class="b" style="--i:8" d="M1051.9 520.1A252 252 0 0 1 1050.2 557.8L966.8 547.9A168 168 0 0 0 967.9 522.7Z"><title>IA e economia digital: Infraestruturas do mercado financeiro</title></path>
+    <path class="p" style="--i:9" d="M1045.3 585.5A252 252 0 0 1 1034.0 621.6L956.0 590.4A168 168 0 0 0 963.6 566.4Z"><title>Sistema político: Voto distrital misto</title></path>
+    <path class="b" style="--i:10" d="M1022.1 647.1A252 252 0 0 1 1001.8 679.0L934.5 628.6A168 168 0 0 0 948.1 607.4Z"><title>Economia circular e ESG: Política de economia circular</title></path>
+    <path class="b" style="--i:11" d="M998.0 683.8A252 252 0 0 1 972.5 711.7L915.0 650.5A168 168 0 0 0 932.0 631.9Z"><title>Economia circular e ESG: Crédito na compra de recicláveis</title></path>
+    <path class="a" style="--i:12" d="M951.0 729.8A252 252 0 0 1 919.1 750.1L879.4 676.1A168 168 0 0 0 900.6 662.5Z"><title>Governança pública: Reforma administrativa</title></path>
+    <path class="a" style="--i:13" d="M913.6 752.9A252 252 0 0 1 878.7 767.4L852.5 687.6A168 168 0 0 0 875.7 678.0Z"><title>Governança pública: Nova lei de finanças públicas</title></path>
+    <path class="b" style="--i:14" d="M851.5 774.7A252 252 0 0 1 814.1 779.6L809.4 695.7A168 168 0 0 0 834.4 692.4Z"><title>Comércio exterior: Remessas internacionais</title></path>
+    <path class="a" style="--i:15" d="M785.9 779.6A252 252 0 0 1 748.5 774.7L765.6 692.4A168 168 0 0 0 790.6 695.7Z"><title>Associativismo: Dia Nacional do Associativismo</title></path>
+    <path class="b" style="--i:16" d="M721.3 767.4A252 252 0 0 1 686.4 752.9L724.3 678.0A168 168 0 0 0 747.5 687.6Z"><title>Mulher empreendedora: Empreendedorismo feminino</title></path>
+    <path class="b" style="--i:17" d="M680.9 750.1A252 252 0 0 1 649.0 729.8L699.4 662.5A168 168 0 0 0 720.6 676.1Z"><title>Mulher empreendedora: Crimes patrimoniais na violência doméstica</title></path>
+    <path class="b" style="--i:18" d="M644.2 726.0A252 252 0 0 1 616.3 700.5L677.5 643.0A168 168 0 0 0 696.1 660.0Z"><title>Mulher empreendedora: Fundo de emprego e empreendedorismo</title></path>
+    <path class="p" style="--i:19" d="M598.2 679.0A252 252 0 0 1 577.9 647.1L651.9 607.4A168 168 0 0 0 665.5 628.6Z"><title>Direitos trabalhistas e do empregador: Jornada de trabalho</title></path>
+    <path class="a" style="--i:20" d="M575.1 641.6A252 252 0 0 1 560.6 606.7L640.4 580.5A168 168 0 0 0 650.0 603.7Z"><title>Direitos trabalhistas e do empregador: Compensação na transição da jornada</title></path>
+    <path class="a" style="--i:21" d="M558.8 600.8A252 252 0 0 1 550.6 563.9L633.7 552.0A168 168 0 0 0 639.2 576.6Z"><title>Direitos trabalhistas e do empregador: Trabalho flexível por hora</title></path>
+    <path class="a" style="--i:22" d="M549.8 557.8A252 252 0 0 1 548.1 520.1L632.1 522.7A168 168 0 0 0 633.2 547.9Z"><title>Direitos trabalhistas e do empregador: Domingos e feriados no comércio</title></path>
+    <path class="a" style="--i:23" d="M548.4 513.9A252 252 0 0 1 553.3 476.5L635.6 493.6A168 168 0 0 0 632.3 518.6Z"><title>Direitos trabalhistas e do empregador: Estatuto do Aprendiz</title></path>
+    <path class="a" style="--i:24" d="M554.7 470.5A252 252 0 0 1 566.0 434.4L644.0 465.6A168 168 0 0 0 636.4 489.6Z"><title>Direitos trabalhistas e do empregador: Trabalho por aplicativo</title></path>
+    <path class="a" style="--i:25" d="M568.4 428.7A252 252 0 0 1 585.8 395.2L657.2 439.5A168 168 0 0 0 645.6 461.8Z"><title>Direitos trabalhistas e do empregador: Riscos psicossociais (NR-1)</title></path>
+    <path class="p" style="--i:26" d="M602.0 372.2A252 252 0 0 1 627.5 344.3L685.0 405.5A168 168 0 0 0 668.0 424.1Z"><title>Simples Nacional e MEI: Tetos do Simples e do MEI</title></path>
+    <path class="b" style="--i:27" d="M632.0 340.1A252 252 0 0 1 662.0 317.1L708.0 387.4A168 168 0 0 0 688.0 402.8Z"><title>Simples Nacional e MEI: Teto do MEI proposto pelo governo</title></path>
+    <path class="b" style="--i:28" d="M667.2 313.8A252 252 0 0 1 700.7 296.4L733.8 373.6A168 168 0 0 0 711.5 385.2Z"><title>Simples Nacional e MEI: CBS zero nas vendas de pequeno valor</title></path>
+    <path class="b" style="--i:29" d="M706.4 294.0A252 252 0 0 1 742.5 282.7L761.6 364.4A168 168 0 0 0 737.6 372.0Z"><title>Simples Nacional e MEI: Obrigações e multas por erro formal</title></path>
+    <path class="b" style="--i:30" d="M748.5 281.3A252 252 0 0 1 785.9 276.4L790.6 360.3A168 168 0 0 0 765.6 363.6Z"><title>Simples Nacional e MEI: IR sobre lucros e dividendos</title></path>
+  </svg>
+  <div class="t14-centro" data-passo="1"><b>31</b><span>pautas no radar</span></div>
+  <p class="t14-leg" data-passo="1"><i></i>As cinco prioridades do ano</p>
+  <div class="t14-lado e" data-passo="2">
+    <div class="t14-tema" style="top:199px;--j:0"><h2><b>5</b>Simples Nacional e MEI</h2><ul><li class="p">Tetos do Simples e do MEI</li><li>Teto do MEI proposto pelo governo</li><li>CBS zero nas vendas de pequeno valor</li><li>Obrigações e multas por erro formal</li><li>IR sobre lucros e dividendos</li></ul></div>
+    <div class="t14-tema" style="top:424px;--j:1"><h2><b>7</b>Direitos trabalhistas e do empregador</h2><ul><li class="p">Jornada de trabalho</li><li>Compensação na transição da jornada</li><li>Trabalho flexível por hora</li><li>Domingos e feriados no comércio</li><li>Estatuto do Aprendiz</li><li>Trabalho por aplicativo</li><li>Riscos psicossociais (NR-1)</li></ul></div>
+    <div class="t14-tema" style="top:625px;--j:2"><h2><b>3</b>Mulher empreendedora</h2><ul><li>Empreendedorismo feminino</li><li>Crimes patrimoniais na violência doméstica</li><li>Fundo de emprego e empreendedorismo</li></ul></div>
+    <div class="t14-tema" style="top:742px;--j:3"><h2><b>1</b>Associativismo</h2><ul><li>Dia Nacional do Associativismo</li></ul></div>
+    <div class="t14-tema" style="top:817px;--j:4"><h2><b>1</b>Comércio exterior</h2><ul><li>Remessas internacionais</li></ul></div>
+  </div>
+  <div class="t14-lado d" data-passo="2">
+    <div class="t14-tema" style="top:199px;--j:0"><h2><b>5</b>Reforma tributária</h2><ul><li class="p">Implementação da reforma</li><li>Código do contribuinte e devedor contumaz</li><li>IBS e CBS nas contribuições associativas</li><li>Tributação de fintechs e apostas</li><li>Monitoramento da reforma</li></ul></div>
+    <div class="t14-tema" style="top:406px;--j:1"><h2><b>4</b>IA e economia digital</h2><ul><li class="p">Marco legal da IA</li><li>Concorrência em mercados digitais</li><li>Fiscalização das agências reguladoras</li><li>Infraestruturas do mercado financeiro</li></ul></div>
+    <div class="t14-tema" style="top:588px;--j:2"><h2><b>1</b>Sistema político</h2><ul><li class="p">Voto distrital misto</li></ul></div>
+    <div class="t14-tema" style="top:668px;--j:3"><h2><b>2</b>Economia circular e ESG</h2><ul><li>Política de economia circular</li><li>Crédito na compra de recicláveis</li></ul></div>
+    <div class="t14-tema" style="top:764px;--j:4"><h2><b>2</b>Governança pública</h2><ul><li>Reforma administrativa</li><li>Nova lei de finanças públicas</li></ul></div>
+  </div>
+  <p class="n-discreto" data-miudo>11</p>
+</section>
 <section class="slide t09 dark" data-n="09">
   <div class="t09-disco" aria-hidden="true"></div>
   <div class="t09-fatia" aria-hidden="true"></div>
@@ -2450,7 +2540,7 @@ html.v-semcursor #fundo{cursor:none}
   });
 
   
-  var ALVOS = '.mp-heroi b,.t11-trio b,.t05-heroi b,.t12-casas .b b';
+  var ALVOS = '.mp-heroi b,.t11-trio b,.t05-heroi b,.t12-casas .b b,.t14-centro b';
   function conta(sl) {
     [].forEach.call(sl.querySelectorAll(ALVOS), function (el) {
       var p = el.closest('[data-passo]');
